@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul class="sidebar">
+    <li onclick="hideSidebar()"><a href="#">Back</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+      <ul>
+        <li><a href="#"><img src="Annotation 2024-09-11 232222.png" alt=""></a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Services</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="btn" onclick="showSidebar()"><a href="#">MENU</a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+        }
+        
+        function hideSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
+        }
+    </script>  
+</body>
+</html>

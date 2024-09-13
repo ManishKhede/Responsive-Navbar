@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: url('pexels-vladalex94-1402787.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background: rgba(73, 85, 91, 0.5);
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+}
+nav li{
+height: 50px;
+
+}
+nav a{
+    height: 90%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(225, 239, 250);
+    transition: .3s;
+}
+nav a:hover{
+    background-color: rgb(135, 140, 145);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(167, 163, 163, 0.171);
+    backdrop-filter: blur(10px);
+    right: 0;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    justify-content: flex-start;
+}
+.btn{
+    display: none;
+    
+}
+
+@media(max-width:800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+}
+@media(max-width:400px) {
+    .sidebar{
+        width:100%;
+    }
+}
